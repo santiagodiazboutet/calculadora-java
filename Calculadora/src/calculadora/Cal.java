@@ -25,29 +25,27 @@ public class Cal {
         char operador;
         Scanner lector = new Scanner(System.in);
         
-        while(continuar!=0)
-        {
-            System.out.println("Ingrese 1- ingresar un operador y realizar una cuenta. 0- para salir.");
-            continuar=lector.nextInt();
-            if(continuar!=0)
-            {
+        
                 System.out.println("Ingrese el primer numero.");
                 numero1=lector.nextInt();
                 System.out.println("Ingrese el segundo numero.");
                 numero2=lector.nextInt();
-                System.out.println("Ingrese el simbolo de la operacion que desea realizar.");
-                Calculadora.SetOperador(lector.next().charAt(0));
+                Calculadora.SetOperador('+');
                 operador=Calculadora.GetOperador();
-                System.out.println("Su operador elegido es: "+operador);
+                System.out.println("Su operador es: "+operador);
                 Calculadora.CalcularOperador(numero1, numero2);
-                
-                
-            }
-             
-            
-        }
-        
-        
+                Calculadora.SetOperador('-');
+                operador=Calculadora.GetOperador();
+                System.out.println("Su operador es: "+operador);
+                Calculadora.CalcularOperador(numero1, numero2);
+                Calculadora.SetOperador('/');
+                operador=Calculadora.GetOperador();
+                System.out.println("Su operador es: "+operador);
+                Calculadora.CalcularOperador(numero1, numero2);
+                Calculadora.SetOperador('*');
+                operador=Calculadora.GetOperador();
+                System.out.println("Su operador es: "+operador);
+                Calculadora.CalcularOperador(numero1, numero2);
         
     }
     
