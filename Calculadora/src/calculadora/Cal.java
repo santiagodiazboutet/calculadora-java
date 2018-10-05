@@ -31,20 +31,16 @@ public class Cal {
                 System.out.println("Ingrese el segundo numero.");
                 numero2=lector.nextInt();
                 Calculadora.SetOperador('+');
-                operador=Calculadora.GetOperador();
-                System.out.println("Su operador es: "+operador);
+                System.out.println("Su operador es: "+Calculadora.GetOperador());
                 Calculadora.CalcularOperador(numero1, numero2);
                 Calculadora.SetOperador('-');
-                operador=Calculadora.GetOperador();
-                System.out.println("Su operador es: "+operador);
+                System.out.println("Su operador es: "+Calculadora.GetOperador());
                 Calculadora.CalcularOperador(numero1, numero2);
                 Calculadora.SetOperador('/');
-                operador=Calculadora.GetOperador();
-                System.out.println("Su operador es: "+operador);
+                System.out.println("Su operador es: "+Calculadora.GetOperador());
                 Calculadora.CalcularOperador(numero1, numero2);
                 Calculadora.SetOperador('*');
-                operador=Calculadora.GetOperador();
-                System.out.println("Su operador es: "+operador);
+                System.out.println("Su operador es: "+Calculadora.GetOperador());
                 Calculadora.CalcularOperador(numero1, numero2);
         
     }
